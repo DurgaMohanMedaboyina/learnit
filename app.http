@@ -1,0 +1,67 @@
+
+POST http://localhost:3000/register/
+Content-Type:application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+POST http://localhost:3000/login/
+Content-Type:application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+
+###
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc1NjgyMjcwfQ.tKPP-Y8QZ8n_kI0-6CPSUiTu7p-QnKFPoZb-jOZeso0
+
+
+###
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc1NjgyMjcwfQ.tKPP-Y8QZ8n_kI0-6CPSUiTu7p-QnKFPoZb-jOZeso0
+
+###
+
+
+POST http://localhost:3000/user/tweets/
+Content-Type:application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc1NjgyMjcwfQ.tKPP-Y8QZ8n_kI0-6CPSUiTu7p-QnKFPoZb-jOZeso0
+
+
+{
+  "tweet":"The Mornings",
+  "userId":"2",
+  "dateTime":"06-01-2023"
+}
+
+###
+DELETE http://localhost:3000/tweets/20/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc1NjgyMjcwfQ.tKPP-Y8QZ8n_kI0-6CPSUiTu7p-QnKFPoZb-jOZeso0
+
+###
+
+
+GET http://localhost:3000/tweets/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc1NjgyMjcwfQ.tKPP-Y8QZ8n_kI0-6CPSUiTu7p-QnKFPoZb-jOZeso0
+
+###
+
+
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc1NjgyMjcwfQ.tKPP-Y8QZ8n_kI0-6CPSUiTu7p-QnKFPoZb-jOZeso0
+
+###
+
+GET http://localhost:3000/tweets/4/replies/
+Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc1NjgyMjcwfQ.tKPP-Y8QZ8n_kI0-6CPSUiTu7p-QnKFPoZb-jOZeso0
+
+###
+
